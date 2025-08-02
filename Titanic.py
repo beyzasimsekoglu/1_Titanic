@@ -15,6 +15,7 @@ missing_values
 # Drop 'Cabin' due to too many missing values
 titanic_df.drop(columns=['Cabin'], inplace=True)
 
+
 # Fill missing 'Age' and 'Fare' with their respective median values
 titanic_df['Age'] = titanic_df['Age'].fillna(titanic_df['Age'].median())
 titanic_df['Fare'] = titanic_df['Fare'].fillna(titanic_df['Fare'].median())
