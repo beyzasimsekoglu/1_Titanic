@@ -12,6 +12,7 @@ titanic_df.info(), titanic_df.head()
 missing_values = titanic_df.isnull().sum()
 missing_values
 
+
 # Drop 'Cabin' due to too many missing values
 titanic_df.drop(columns=['Cabin'], inplace=True)
 
